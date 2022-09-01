@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="C:\Users\SiddhiP\OneDrive - CitiusTech\Desktop\jQuery\js\jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div id="div1">
+        <h2>DIV1</h2>
+    </div>
+    <hr>
+    <div id="div2">
+        <h2>DIV2</h2>
+    </div>
+    <hr>
+
+<input type="text">
+<input type="text">
+<hr>
+<br>
+<br>
+<textarea class="mytextarea"></textarea>
+<textarea class="mytextarea"></textarea>
+<hr>
+<button  id="mybutton1">Apply style to Textboxes</button>
+<button id="mybutton2">Apply style to first div</button>
+<button id="mybutton3">Say Hello</button>
+
+
+
+<script >
+    $(document).ready(function(){
+        $('#mybutton1').click(function(){
+                $('.mytextarea').css('border' , '2px solid red');
+            });
+
+        $('#mybutton2').click(function(){
+              $('#div1').append('A  dog has sharp teeth so that it can eat flesh very easily, it has four legs, two ears, two eyes, a tail, a mouth, and a nose. It is a very clever animal and is very useful in catching thieves. It runs very fast, barks loudly and attacks the strangers. A dog saves the life of the master from danger..')
+        });
+        $('#mybutton3').click(function(){
+            $("input[type=text]").val('Hello');
+                $(".mytextarea").val('Hello');
+        });
+    });
+
+
+            
+
+</script>
+</body>
+</html>
